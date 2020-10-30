@@ -21,7 +21,7 @@ html {
 body {
 	font-family: $body-font;
 	line-height: 1.42;
-  color: $main-text;
+  color: $text-color1;
   background: $bg-color;
 }
 
@@ -38,6 +38,7 @@ html, body {
 }
 
 .container {
+  box-sizing: content-box;
 	max-width: $container-width;
 	padding: 0 rem(15px);
 	margin: 0 auto;
