@@ -1,0 +1,14 @@
+//adjustment variables
+$body-font: 'Open Sans', sans-serif;
+$container-width: 1170px;
+$offset: rem(30px);
+
+//colors
+$main-text: #3E4056;
+$orange: #F05D63;
+$bg-color: #F2F2F2;
+
+//layout
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import './misc/mixins.scss';
+@import './misc/adjustment.scss';
