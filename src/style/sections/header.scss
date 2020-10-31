@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   height: 112px;
   background-color: #fff;
   box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
@@ -122,5 +123,22 @@
     &_medium {
       background: url("../assets/img/medium-icon.svg") center / cover no-repeat;
     }
+  }
+}
+
+.add-btn {
+  position: absolute;
+  right: calc(50% - 586px);
+  bottom: -32px;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background: url("../assets/img/plus-icon.svg") center / auto no-repeat, $gradient;
+  transition: all 0.3s ease;
+  &:hover, &:focus {
+    box-shadow: 0 0 5px #F16161;
   }
 }
