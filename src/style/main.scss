@@ -1,19 +1,23 @@
 //adjustment variables
-$body-font: 'Open Sans', sans-serif;
+$main-font: 'Open Sans', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
 $container-width: 1170px;
 $offset: rem(30px);
 
 //colors
 $text-color1: #3E3F58;
 $text-color2: #3E4056;
+$active-menu-link: #ECF1F8;
+$switcher: #ED5267;
 $orange: #F05D63;
 $bg-color: #F2F2F2;
 $gradient: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
 
 //layout
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600;700&display=swap');
 @import './misc/mixins.scss';
 @import './misc/adjustment.scss';
 
 //sections
 @import './sections/header.scss';
+@import './sections/profile.scss';

@@ -43,5 +43,84 @@
     <button class="add-btn" type="button"></button>
   </div>
 </header>
+<main class="main">
+  <div class="container">
+    <section class="user-profile">
+      <div class="user-profile__header">
+        <a class="user-profile__avatar" href="#">
+          <img src="assets/img/avatar.jpg" alt="User avatar">
+        </a>
+        <div class="flex-wrap">
+          <h1 class="user-profile__name">
+            Benjamin Clementine
+          </h1>
+          <span class="user-profile__nickname">
+          &#64;benclementine
+        </span>
+          <a class="user-profile__edit-btn" href="#">
+            Edit Profile
+          </a>
+        </div>
+        <input class="user-profile__options-btn" type="checkbox">
+        <label class="user-profile__options-icon"></label>
+        <ul class="user-profile__options-menu options-menu">
+          <li class="options-menu__item">
+            <a href="#" class="options-menu__link options-menu__link_report">
+              Report User
+            </a>
+          </li>
+          <li class="options-menu__item">
+            <a href="#" class="options-menu__link options-menu__link_block">
+              Block User
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="user-profile__count-list count-list">
+        <li class="count-list__item">
+          <a href="#" class="count-list__link">
+            <span class="count-list__item-number">
+              45
+            </span>
+            <span class="count-list__item-name">
+              synths
+          </span>
+          </a>
+        </li>
+        <li class="count-list__item">
+          <a href="#" class="count-list__link">
+            <span class="count-list__item-number">
+              110
+            </span>
+            <span class="count-list__item-name">
+              followers
+          </span>
+          </a>
+        </li>
+        <li class="count-list__item">
+          <a href="#" class="count-list__link">
+            <span class="count-list__item-number">
+              322
+            </span>
+            <span class="count-list__item-name">
+              following
+          </span>
+          </a>
+        </li>
+      </ul>
+      <p class="user-profile__about">
+        Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each,
+        according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+      </p>
+      <div class="user-profile__privacy privacy">
+        <span class="privacy__value privacy__value_public">Public</span>
+        <input type="checkbox" id="toggle" class="privacy__checkbox" />
+        <label for="toggle" class="privacy__switch"></label>
+        <span class="privacy__value privacy__value_private">Private</span>
+      </div>
+    </section>
+    <section class="news"></section>
+  </div>
+</main>
 </body>
 </html>

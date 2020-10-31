@@ -1,0 +1,206 @@
+.main {
+  padding-top: rem(72px);
+}
+
+.user-profile__header .flex-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.user-profile {
+  position: relative;
+  width: 350px;
+  &__header {
+    display: flex;
+    margin-bottom: rem(27px);
+  }
+  &__avatar {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-right: rem(26px);
+    border-radius: 50%;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    width: 145px;
+    margin: 0 0 rem(7px);
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: rem(26px);
+  }
+  &__nickname {
+    font-size: 16px;
+    letter-spacing: -0.25px;
+    line-height: rem(20px);
+    margin-bottom: rem(17px);
+  }
+  &__edit-btn {
+    position: relative;
+    color: $orange;
+    font-size: 16px;
+    line-height: rem(20px);
+    text-align: center;
+    align-self: center;
+    border-bottom: 1px solid transparent;
+    &:hover, &:focus {
+      border-color: $orange;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: -27px;
+      top: 4px;
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: url("../assets/img/edit-icon.svg");
+    }
+  }
+  &__options-icon {
+    position: absolute;
+    right: 18px;
+    top: 4px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: url("../assets/img/dots-icon.svg") center / auto no-repeat;
+    transition: box-shadow 0.3s ease;
+  }
+  &__options-btn {
+    position: absolute;
+    right: 18px;
+    top: 4px;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    opacity: 0;
+    &:focus ~ .user-profile__options-icon {
+      box-shadow: 0 0 5px $orange;
+    }
+    &:checked  ~ .user-profile__options-menu {
+      opacity: 0.9;
+      display: block;
+    }
+  }
+  &__about {
+    font-size: rem(16px);
+    line-height: rem(24px);
+  }
+}
+
+.options-menu {
+  position: absolute;
+  right: -138px;
+  top: 40px;
+  z-index: 5;
+  display: none;
+  width: 176px;
+  padding: rem(24px) 0;
+  background-color: #fff;
+  backdrop-filter: blur(21.7463px);
+  opacity: 0;
+  border-radius: 8px;
+  &__link {
+    position: relative;
+    display: block;
+    padding: rem(8px) 0 rem(8px) rem(60px);
+    font-weight: 600;
+    color: $text-color2;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 25px;
+    }
+    &_report::before {
+      width: 20px;
+      height: 20px;
+      background: url("../assets/img/report-icon.svg") center / cover no-repeat;
+    }
+    &_block::before {
+      width: 16px;
+      height: 16px;
+      background: url("../assets/img/block-icon.svg") center / cover no-repeat;
+    }
+    &:hover, &:focus {
+      background-color: $active-menu-link;
+    }
+  }
+}
+
+.count-list {
+  display: flex;
+  margin-bottom: rem(19px);
+  &__item {
+    &:not(:last-child) {
+      margin-right: rem(38px);
+    }
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(5px);
+    color: $text-color1;
+    line-height: rem(24px);
+    border-radius: 5px;
+    &:hover, &:focus {
+      background-color: rgba(#000, 0.1);
+    }
+  }
+  &__item-number {
+    font-weight: 700;
+    font-size: rem(18px);
+  }
+  &__item-name {
+    font-size: rem(16px);
+    color: #636363;
+  }
+}
+
+.privacy {
+  position: absolute;
+  right: -260px;
+  top: 0;
+  display: inline-flex;
+  &__value {
+    font-size: rem(16px);
+    font-weight: 600;
+    line-height: rem(22px);
+    color: $text-color2;
+  }
+  &__switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 0 rem(30px);
+    background-color: $switcher;
+    border-radius: 20px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: all 0.3s ease;
+    }
+  }
+  &__checkbox {
+    display: none;
+    &:checked + .privacy__switch::after  {
+      left: 19px;
+    }
+  }
+}
