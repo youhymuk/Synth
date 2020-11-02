@@ -8,119 +8,201 @@
   <title>Synth</title>
 </head>
 <body>
-<header class="header">
-  <div class="container">
-    <div class="flex-wrap">
-      <a href="#" class="logo">
-        <img src="assets/img/logo.svg" alt="Synth logo">
-      </a>
-      <div class="profile">
-        <div class="profile-info">
-          <span class="profile-info__name">Arthur Wood</span>
-          <span class="profile-info__photo"><img src="assets/img/avatar-small.jpg" alt="User avatar"></span>
-          <input class="profile-info__btn" id="user__info-btn" type="checkbox">
-          <label for="user__info-btn"></label>
-          <ul class="profile-menu">
-            <li class="profile-menu__item"><a href="#" class="user-menu__link"></a></li>
-            <li class="profile-menu__item"><a href="#" class="user-menu__link"></a></li>
-            <li class="profile-menu__item"><a href="#" class="user-menu__link"></a></li>
+<div class="app">
+  <header class="header">
+    <div class="container">
+      <div class="flex-wrap">
+        <a href="#" class="logo">
+          <img src="assets/img/logo.svg" alt="Synth logo">
+        </a>
+        <div class="profile">
+          <div class="profile-info">
+            <span class="profile-info__name">Arthur Wood</span>
+            <span class="profile-info__photo"><img src="assets/img/avatar-small.jpg" alt="User avatar"></span>
+            <input class="profile-info__btn" id="user__info-btn" type="checkbox">
+            <label for="user__info-btn"></label>
+            <ul class="profile-menu">
+              <li class="profile-menu__item"><a href="#" class="profile-menu__link">Settings</a></li>
+              <li class="profile-menu__item"><a href="#" class="profile-menu__link">Log out</a></li>
+            </ul>
+          </div>
+          <ul class="options">
+            <li class=options__item"><a href="#" class="options__link options__link_notification"></a></li>
+            <li class=options__item"><a href="#" class="options__link options__link_share"></a></li>
+            <li class=options__item"><a href="#" class="options__link options__link_medium"></a></li>
           </ul>
         </div>
-        <ul class="options">
-          <li class=options__item"><a href="#" class="options__link options__link_notification"></a></li>
-          <li class=options__item"><a href="#" class="options__link options__link_share"></a></li>
-          <li class=options__item"><a href="#" class="options__link options__link_medium"></a></li>
-        </ul>
       </div>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li class="nav-menu__item"><a class="nav-menu__link nav-menu__link_current" href="#">Feed</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Explore</a></li>
+          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Discussions</a></li>
+        </ul>
+      </nav>
+      <button class="add-btn" type="button"></button>
     </div>
-    <nav class="nav">
-      <ul class="nav-menu">
-        <li class="nav-menu__item"><a class="nav-menu__link nav-menu__link_current" href="#">Feed</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Explore</a></li>
-        <li class="nav-menu__item"><a class="nav-menu__link" href="#">Discussions</a></li>
-      </ul>
-    </nav>
-    <button class="add-btn" type="button"></button>
-  </div>
-</header>
-<main class="main">
-  <div class="container">
-    <section class="user-profile">
-      <div class="user-profile__header">
-        <a class="user-profile__avatar" href="#">
-          <img src="assets/img/avatar.jpg" alt="User avatar">
-        </a>
-        <div class="flex-wrap">
-          <h1 class="user-profile__name">
-            Benjamin Clementine
-          </h1>
-          <span class="user-profile__nickname">
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="user-profile">
+        <div class="user-profile__header">
+          <a class="user-profile__avatar" href="#">
+            <img src="assets/img/avatar.jpg" alt="User avatar">
+          </a>
+          <div class="flex-wrap">
+            <h1 class="user-profile__name">
+              Benjamin Clementine
+            </h1>
+            <span class="user-profile__nickname">
           &#64;benclementine
         </span>
-          <a class="user-profile__edit-btn" href="#">
-            Edit Profile
-          </a>
+            <a class="user-profile__edit-btn" href="#">
+              Edit Profile
+            </a>
+          </div>
+          <input class="user-profile__options-btn" type="checkbox">
+          <label class="user-profile__options-icon"></label>
+          <ul class="user-profile__options-menu options-menu">
+            <li class="options-menu__item">
+              <a href="#" class="options-menu__link options-menu__link_report">
+                Report User
+              </a>
+            </li>
+            <li class="options-menu__item">
+              <a href="#" class="options-menu__link options-menu__link_block">
+                Block User
+              </a>
+            </li>
+          </ul>
         </div>
-        <input class="user-profile__options-btn" type="checkbox">
-        <label class="user-profile__options-icon"></label>
-        <ul class="user-profile__options-menu options-menu">
-          <li class="options-menu__item">
-            <a href="#" class="options-menu__link options-menu__link_report">
-              Report User
-            </a>
-          </li>
-          <li class="options-menu__item">
-            <a href="#" class="options-menu__link options-menu__link_block">
-              Block User
-            </a>
-          </li>
-        </ul>
-      </div>
-      <ul class="user-profile__count-list count-list">
-        <li class="count-list__item">
-          <a href="#" class="count-list__link">
+        <ul class="user-profile__count-list count-list">
+          <li class="count-list__item">
+            <a href="#" class="count-list__link">
             <span class="count-list__item-number">
               45
             </span>
-            <span class="count-list__item-name">
+              <span class="count-list__item-name">
               synths
           </span>
-          </a>
-        </li>
-        <li class="count-list__item">
-          <a href="#" class="count-list__link">
+            </a>
+          </li>
+          <li class="count-list__item">
+            <a href="#" class="count-list__link">
             <span class="count-list__item-number">
               110
             </span>
-            <span class="count-list__item-name">
+              <span class="count-list__item-name">
               followers
           </span>
-          </a>
-        </li>
-        <li class="count-list__item">
-          <a href="#" class="count-list__link">
+            </a>
+          </li>
+          <li class="count-list__item">
+            <a href="#" class="count-list__link">
             <span class="count-list__item-number">
               322
             </span>
-            <span class="count-list__item-name">
+              <span class="count-list__item-name">
               following
           </span>
-          </a>
-        </li>
-      </ul>
-      <p class="user-profile__about">
-        Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each,
-        according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
-      </p>
-      <div class="user-profile__privacy privacy">
-        <span class="privacy__value privacy__value_public">Public</span>
-        <input type="checkbox" id="toggle" class="privacy__checkbox" />
-        <label for="toggle" class="privacy__switch"></label>
-        <span class="privacy__value privacy__value_private">Private</span>
-      </div>
-    </section>
-    <section class="news"></section>
-  </div>
-</main>
+            </a>
+          </li>
+        </ul>
+        <p class="user-profile__about">
+          Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each,
+          according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and
+          Ethereum.
+        </p>
+        <div class="user-profile__privacy privacy">
+          <span class="privacy__value privacy__value_public">Public</span>
+          <input type="checkbox" id="toggle" class="privacy__checkbox"/>
+          <label for="toggle" class="privacy__switch"></label>
+          <span class="privacy__value privacy__value_private">Private</span>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news-card" tabindex="0">
+          <div class="news-card__ref"></div>
+          <span class="news-card__title">
+          New air routes that promise cheap flights in
+        </span>
+          <div class="news-card__footer">
+            <a href="#" class="news-card__user">
+              <span class="news-card__user-photo"></span>
+              <span class="news-card__user-name">Gregory Watkins</span>
+            </a>
+            <button class="news-card__share-btn">
+              Share
+            </button>
+          </div>
+        </div>
+        <div class="news-card" tabindex="0">
+          <div class="news-card__ref"></div>
+          <span class="news-card__title">
+          New air routes that promise cheap flights in
+        </span>
+          <div class="news-card__footer">
+            <a href="" class="news-card__user">
+              <span class="news-card__user-photo"></span>
+              <span class="news-card__user-name">Gregory Watkins</span>
+            </a>
+            <button class="news-card__share-btn">
+              Share
+            </button>
+          </div>
+        </div>
+        <div class="news-card" tabindex="0">
+          <div class="news-card__ref">
+            Shared to
+            <a href="#" class="news-card__ref-link news-card__ref-link_hash">
+              &#35;discussionaboutanimgttdds…
+            </a>
+          </div>
+          <span class="news-card__title">
+          New air routes that promise cheap flights in
+        </span>
+          <div class="news-card__footer">
+            <a href="" class="news-card__user">
+              <span class="news-card__user-photo"></span>
+              <span class="news-card__user-name">Gregory Watkins</span>
+            </a>
+            <div class="news-card__counts">
+            <span class="news-card__count news-card__count_views">
+            88
+          </span>
+              <span class="news-card__count news-card__count_likes">
+            24
+          </span>
+            </div>
+          </div>
+        </div>
+        <div class="news-card" tabindex="0">
+          <div class="news-card__ref">
+            <a href="#" class="news-card__ref-link news-card__ref-link_icon">
+              Shared via weblink
+            </a>
+          </div>
+          <span class="news-card__title">
+          New air routes that promise cheap flights in
+        </span>
+          <div class="news-card__footer">
+            <a href="" class="news-card__user">
+              <span class="news-card__user-photo"></span>
+              <span class="news-card__user-name">Gregory Watkins</span>
+            </a>
+            <div class="news-card__counts">
+            <span class="news-card__count news-card__count_views">
+            88
+            </span>
+              <span class="news-card__count news-card__count_likes">
+            24
+            </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
 </body>
 </html>
