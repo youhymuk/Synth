@@ -6,23 +6,22 @@ html {
 	}
 
 	@include laptop {
-		font-size: 15px;
-	}
-
-	@include tablets {
 		font-size: 14px;
 	}
 
-	@include phones {
+	@include tablets {
 		font-size: 13px;
+	}
+
+	@include phones {
+		font-size: 12px;
 	}
 }
 
 body {
-	font-family: $body-font;
+	font-family: $main-font;
 	line-height: 1.42;
   color: $text-color1;
-  background: $bg-color;
 }
 
 html, body {
@@ -72,4 +71,13 @@ img {
 a {
 	transition: all .6s ease;
   text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+  background: $bg-color;
+}
+
+.main {
+  padding-top: 112px;
 }

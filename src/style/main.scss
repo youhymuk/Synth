@@ -2,7 +2,6 @@
 $main-font: 'Open Sans', sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
 $container-width: 1170px;
-$offset: rem(30px);
 
 //colors
 $text-color1: #3E3F58;
@@ -21,3 +20,4 @@ $gradient: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
 //sections
 @import './sections/header.scss';
 @import './sections/profile.scss';
+@import './sections/posts.scss';
